@@ -4,59 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Clicker</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="game.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="inputs.css">
-    <link rel="stylesheet" href="ui.css">
-    <link rel="stylesheet" href="effects.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/game.css">
+    <link rel="stylesheet" href="style/button.css">
+    <link rel="stylesheet" href="style/inputs.css">
+    <link rel="stylesheet" href="style/ui.css">
+    <link rel="stylesheet" href="style/effects.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="effects"></div>
 
     <div class="game">
-
         <div id="cps">0 CPS</div>
-
         <h1>Clicker</h1>
 
-    <div>
-        <button id="resetAllBtn">RESET ALL</button>
-        <button id="resetBgBtn">RESET BG</button>
-        <button id="resetBtnBgBtn">RESET BUTTON BG</button>
-    </div>
-
-        <div class="bg-row">
-            <input 
-                type="text" 
-                id="bgInput" 
-                placeholder="Image URL"
-                autocomplete="new-password"
-            >
-
-            <button id="bgBtn">SET IMMAGE BG</button>
-
+        <div>
+            <button id="resetAllBtn">RESET ALL</button>
+            <button id="resetBgBtn">RESET BG</button>
+            <button id="resetBtnBgBtn">RESET BUTTON BG</button>
         </div>
 
         <div class="bg-row">
-            <input 
-                type="text" 
-                id="btnBgInput" 
-                placeholder="Button Image URL"
-                autocomplete="new-password"
-            >
+            <input type="text" id="bgInput" placeholder="Image URL" autocomplete="new-password">
+            <button id="bgBtn">SET IMAGE BG</button>
+        </div>
 
+        <div class="bg-row">
+            <input type="text" id="btnBgInput" placeholder="Button Image URL" autocomplete="new-password">
             <button id="btnBgBtn">SET BUTTON BG</button>
-
         </div>
 
         <div>
-            <input type="text" id="btnTextInput" placeholder="Button text max 10" maxlength="10">
+            <input type="text" id="btnTextInput" placeholder="Button text max 10" maxlength="8">
             <button id="btnTextBtn">SET TX BUTTON</button>
         </div>
 
@@ -64,10 +49,7 @@
             <span id="score">0</span>
         </div>
 
-        <button id="clickBtn">
-            CLICK
-        </button>
-
+        <button id="clickBtn">CLICK</button>
     </div>
     
     <div class="clock-widget" id="clockWidget">
@@ -75,22 +57,22 @@
         <div class="clock-date" id="clockDate">01 января, вторник</div>
     </div>
 
-    <script src="utils.js"></script>
-    <script src="score.js"></script>
-    <script src="clicker.js"></script>
-    <script src="background.js"></script>
-    <script src="buttonBackground.js"></script>
-    <script src="buttonText.js"></script>
-    <script src="main.js"></script>
-    <script src="reset.js"></script>
+    <script src="script/utils.js"></script>
+    <script src="script/drag-engine.js"></script>
+    <script src="script/drag.js"></script>
+    <script src="script/zoom.js"></script>
     
-    <script src="clock.js"></script>
-    <script src="drag.js"></script>
-    <script src="zoom.js"></script>
+    <script src="script/score.js"></script>
+    <script src="script/clock.js"></script>
+    <script src="script/clicker.js"></script>
+    <script src="script/background.js"></script>
+    <script src="script/buttonBackground.js"></script>
+    <script src="script/buttonText.js"></script>
     
-    <script src="drag-engine.js"></script>
-    <script src="widget-game.js"></script>
-    <script src="widget-clock.js"></script>
-
-</body>
+    <script src="script/widget-game.js"></script>
+    <script src="script/widget-clock.js"></script>
+    
+    <script src="script/reset.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/effects.js"></script></body>
 </html>
