@@ -1,0 +1,101 @@
+#bgBtn,
+#btnBgBtn,
+#btnTextBtn,
+#resetBgBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    transition: 0.15s;
+    border: none;
+}
+
+#bgBtn {
+    background: #ffffff2d;
+}
+
+#btnBgBtn {
+    background: #ffffff2d;
+}
+
+#btnTextBtn {
+    background: #ffffff2d;
+}
+
+#resetBgBtn {
+    background: #ef4444;
+}
+
+#bgBtn:hover,
+#btnBgBtn:hover,
+#btnTextBtn:hover,
+#resetBgBtn:hover {
+    filter: brightness(1.1);
+}
+
+#bgBtn:active,
+#btnBgBtn:active,
+#btnTextBtn:active,
+#resetBgBtn:active {
+    transform: scale(0.95);
+}
+
+#resetAllBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #ffffff2d;
+    color: white;
+    transition: 0.15s;
+    border: none;
+}
+
+#resetAllBtn:hover {
+    filter: brightness(1.1);
+}
+
+#resetAllBtn:active {
+    transform: scale(0.95);
+}
+
+#resetBgBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffffff2d;
+    color: white;
+    transition: 0.15s;
+    border: none;
+}
+
+#resetBgBtn:hover {
+    filter: brightness(1.1);
+}
+
+#resetBgBtn:active {
+    transform: scale(0.95);
+}
+
+#resetBtnBgBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffffff2d;
+    color: white;
+    transition: 0.15s;
+    border: none;
+}
+
+#resetBtnBgBtn:hover {
+    filter: brightness(1.1);
+}
+
+#resetBtnBgBtn:active {
+    transform: scale(0.95);
+}

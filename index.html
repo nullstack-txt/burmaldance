@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Clicker</title>
+<link rel="stylesheet" href="style/base.css">
+<link rel="stylesheet" href="style/game.css">
+<link rel="stylesheet" href="style/button.css">
+<link rel="stylesheet" href="style/inputs.css">
+<link rel="stylesheet" href="style/ui.css">
+<link rel="stylesheet" href="style/effects.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="effects"></div>
+
+    <div class="game">
+
+        <div id="cps">0 CPS</div>
+
+        <h1>Clicker</h1>
+
+    <div>
+        <button id="resetAllBtn">RESET ALL</button>
+        <button id="resetBgBtn">RESET BG</button>
+        <button id="resetBtnBgBtn">RESET BUTTON BG</button>
+    </div>
+
+        <div class="bg-row">
+            <input 
+                type="text" 
+                id="bgInput" 
+                placeholder="Image URL"
+                autocomplete="new-password"
+            >
+
+            <button id="bgBtn">SET IMMAGE BG</button>
+
+        </div>
+
+        <div class="bg-row">
+            <input 
+                type="text" 
+                id="btnBgInput" 
+                placeholder="Button Image URL"
+                autocomplete="new-password"
+            >
+
+            <button id="btnBgBtn">SET BUTTON BG</button>
+
+        </div>
+
+        <div>
+            <input type="text" id="btnTextInput" placeholder="Button text max 10" maxlength="10">
+            <button id="btnTextBtn">SET TX BUTTON</button>
+        </div>
+
+        <div class="score-box">
+            <span id="score">0</span>
+        </div>
+
+        <button id="clickBtn">
+            CLICK
+        </button>
+
+    </div>
+    
+    <div class="clock-widget" id="clockWidget">
+        <div class="clock-time" id="clockTime">00:00:00</div>
+        <div class="clock-date" id="clockDate">01 января, вторник</div>
+    </div>
+
+        <script src="script/utils.js"></script>
+        <script src="script/score.js"></script>
+        <script src="script/clicker.js"></script>
+        <script src="script/background.js"></script>
+        <script src="script/buttonBackground.js"></script>
+        <script src="script/buttonText.js"></script>
+        <script src="script/main.js"></script>
+        <script src="script/reset.js"></script>
+        
+        <script src="script/clock.js"></script>
+        <script src="script/drag.js"></script>
+        <script src="script/zoom.js"></script>
+
+</body>
+</html>

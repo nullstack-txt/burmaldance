@@ -1,0 +1,31 @@
+#clickBtn {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.2s, border-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    pointer-events: auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#clickBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+#clickBtn:not(:focus-visible) {
+    outline: none;
+}
+
+#clickBtn:active, 
+.clicked {
+    transform: scale(0.92);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+}
